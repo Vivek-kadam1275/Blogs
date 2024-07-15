@@ -9,7 +9,7 @@ const Blogs = (props) => {
   }, [])
 
   return (
-    <div className="w-6/12 max-w-[1250px] flex flex-col gap-10  pt-20 pb-20 shadow-sm  h-full">
+    <div className="w-6/12 max-w-[1250px] flex flex-col gap-10  pt-20 pb-20    h-full">
 
       {loading ? (<div className="flex justify-center mt-52"><Spinner/></div>) :
 
