@@ -1,6 +1,6 @@
 import axios from "axios";
 import {  createContext, useState } from "react";
-
+import { toast } from "react-toastify";
 
 // Context creation
 export const AppContext = createContext();
@@ -26,6 +26,7 @@ export default function AppContextProvider(props) {
         }
         catch (error) {
                 console.log(error);
+                toast.error("Couldn't fetch Api");
         }
 
     }
