@@ -9,7 +9,7 @@ const Blogs = (props) => {
   }, [])
 
   return (
-    <div className="w-6/12 max-w-[1250px] flex flex-col gap-10  pt-20 shadow-sm  h-full">
+    <div className="w-6/12 max-w-[1250px] flex flex-col gap-10  pt-20 pb-20 shadow-sm  h-full">
 
       {loading ? (<div className="flex justify-center mt-52"><Spinner/></div>) :
 
@@ -24,7 +24,7 @@ const Blogs = (props) => {
             </div>
             <p className="mt-1">{post.content}</p>
 
-            <p className="flex gap-1 ">
+            <p className="flex gap-1 flex-wrap ">
               {post.tags.map((tag, index) => {
                 return <p key={index} className="text-blue-700 underline font-bold text-xs">#{tag}</p>
               })}
